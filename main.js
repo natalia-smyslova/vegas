@@ -1,18 +1,22 @@
 
-// JQUERY
-// $(document).ready(function(){
 
-// });
+// JQUERY
+$(document).ready(function(){
+  $(".fabcybox").fancybox();
+
+});
 
 
 // BURGER
 let burger = document.querySelector(".header__burger");
 let nav = document.querySelector("nav");
+let navList = document.querySelector(".nav-list");
 let body = document.querySelector("body");
 let activeClass = "active";
 
 burger.addEventListener("click", () => {
   nav.classList.toggle(activeClass);
+  navList.classList.toggle(activeClass);
   body.classList.toggle(activeClass);
   burger.classList.toggle(activeClass);
 })
